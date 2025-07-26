@@ -9,7 +9,7 @@ const messagerouter = require('./routes/message');
 const { app, server } = require('./socket/socket');
 env.config()
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://talky-frontend-ovmp.onrender.com",
     credentials:true
 }))
 app.use(express.json())
